@@ -3,10 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>C'est bientôt la quille ?</title>
+    <style>
+      body{
+        text-align:center;
+        font-size: 1em;
+      }
+      label{font-size: 1.5em;}
+      #countdown{
+        font-size: 3.4vw;
+        margin: 1em 0;
+      }
+    </style>
   </head>
   <body>
-    <h1>Pas encore</h1>
+    <label>Pas encore...</label>
     <div id="countdown"></div>
+
+    <div id="alt">
+      Soit <span id="days"></span> jours, ou bien <span id="hours"></span> heures.
+    </div>
 
     <script src="./moment.min.js"></script>
     <script src="./countdown.js"></script>
